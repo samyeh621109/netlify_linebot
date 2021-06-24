@@ -8,7 +8,7 @@ exports.handler = async function (event, context, callback) {
     if (targetEvent.type !== 'message') {
       callback(null, {})
     }
-    const matchResult = targetEvent.message.text.match(/[\d+]|こんにちは/)
+    const matchResult = targetEvent.message.text.match(/[\d+]|嗨/)
     if (!matchResult) {
       callback(null, {})
     }
